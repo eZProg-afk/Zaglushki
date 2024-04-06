@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.betProcess.BetResultActivity">
+
+    <TextView
+        android:id="@+id/labelTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Result of bet:"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/winningTeamNameTextView"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="@id/labelTextView"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_medium"
+        tools:text="Winning team - Chealsey"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintStart_toStartOf="@id/labelTextView"
+        app:layout_constraintTop_toBottomOf="@id/labelTextView" />
+
+    <ImageView
+        android:id="@+id/winningTeamLogoImageView"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="@id/labelTextView"
+        app:layout_constraintStart_toStartOf="@id/winningTeamNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/coeffTextView" />
+
+    <TextView
+        android:id="@+id/coeffTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        tools:text="Coefficient was 2.3"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintEnd_toEndOf="@id/winningTeamNameTextView"
+        app:layout_constraintStart_toStartOf="@id/winningTeamNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/winningTeamNameTextView" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/shape_rounded_24"
+        android:backgroundTint="?attr/colorSecondary"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="16dp"
+        tools:text="You lost and lost 3000 coins. Don't worry, you still have 2000 coins!"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/coeffTextView"
+        app:layout_constraintStart_toStartOf="@id/coeffTextView"
+        app:layout_constraintTop_toBottomOf="@id/winningTeamLogoImageView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/goBackButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        android:drawableEnd="@drawable/ic_back"
+        android:drawableTint="?attr/colorOnSecondary"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Go back to menu"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

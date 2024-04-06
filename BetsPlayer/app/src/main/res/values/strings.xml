@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BetsPlayer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="balance_format">Balance: %d coins</string>
+</resources>

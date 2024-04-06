@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <TextView
+        android:id="@+id/labelTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="App settings:"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/togglePushesSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/labelTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:text="Toggle push notifications"
+        android:fontFamily="@font/poppins_bold"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_rounded_24"
+        android:backgroundTint="?attr/colorSecondary"
+        android:textColor="?attr/colorOnSecondary"
+        android:padding="16dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/toggleAdvicesSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/togglePushesSwitch"
+        app:layout_constraintStart_toStartOf="@id/togglePushesSwitch"
+        app:layout_constraintEnd_toEndOf="@id/togglePushesSwitch"
+        android:text="Toggle advices"
+        android:fontFamily="@font/poppins_bold"
+        android:checked="true"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_rounded_24"
+        android:backgroundTint="?attr/colorSecondary"
+        android:textColor="?attr/colorOnSecondary"
+        android:padding="16dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/showAllContentSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toggleAdvicesSwitch"
+        app:layout_constraintStart_toStartOf="@id/togglePushesSwitch"
+        app:layout_constraintEnd_toEndOf="@id/togglePushesSwitch"
+        android:text="Toggle content"
+        android:fontFamily="@font/poppins_bold"
+        android:checked="true"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_rounded_24"
+        android:backgroundTint="?attr/colorSecondary"
+        android:textColor="?attr/colorOnSecondary"
+        android:padding="16dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/toggleSound"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/showAllContentSwitch"
+        app:layout_constraintStart_toStartOf="@id/togglePushesSwitch"
+        app:layout_constraintEnd_toEndOf="@id/togglePushesSwitch"
+        android:text="Toggle sound"
+        android:fontFamily="@font/poppins_bold"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_rounded_24"
+        android:backgroundTint="?attr/colorSecondary"
+        android:textColor="?attr/colorOnSecondary"
+        android:padding="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/exitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Exit from app"
+        android:drawableEnd="@drawable/ic_exit"
+        android:drawableTint="@color/white"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_marginHorizontal="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="8dp"
+    android:background="@drawable/shape_right_bottom_rounded_64"
+    android:backgroundTint="?attr/colorSurfaceVariant">
+
+    <TextView
+        android:id="@+id/teamsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppins_bold"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Brooklyn vs Manchester" />
+
+    <ImageView
+        android:id="@+id/firstTeamLogoImageView"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@id/vertical_only"
+        app:layout_constraintStart_toStartOf="@id/teamsTextView"
+        app:layout_constraintTop_toBottomOf="@id/teamsTextView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_only"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/secondTeamLogoImageView"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/vertical_only"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="@id/teamsTextView"
+        app:layout_constraintTop_toBottomOf="@id/teamsTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/readMoreTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:drawableEnd="@drawable/ic_start"
+        android:drawableTint="?attr/colorOnPrimary"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Make bet"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/secondTeamLogoImageView"
+        app:layout_constraintStart_toStartOf="@id/firstTeamLogoImageView"
+        app:layout_constraintTop_toBottomOf="@id/secondTeamLogoImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

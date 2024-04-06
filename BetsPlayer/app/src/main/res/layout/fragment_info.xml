@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.info.InfoFragment">
+
+    <TextView
+        android:id="@+id/labelTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Info about app:"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/shape_rounded_24"
+        android:backgroundTint="?attr/colorSecondary"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollIndicators="top|end"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/labelTextView"
+        app:layout_constraintStart_toStartOf="@id/labelTextView"
+        app:layout_constraintTop_toBottomOf="@id/labelTextView">
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="16dp"
+            android:text="BetsPlayer is an application that simulates real bets on teams in a casino. If you do not want to get addicted to online gambling games for money, but really want to try to bet on a team, our simulator will perfectly help you with this! This application uses a virtual (fictitious) currency that you can both earn and lose. Don't worry if your currency drops below zero - you will immediately see that you are back to your starting balance. Choose the team you like, choose how much virtual currency you want to bet on it and enjoy the result!\n\nThe application also contains settings for users who especially love flexibility and customization, the settings will definitely make your user experience even richer!\n\nApplication version - 1.0.1"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:textColor="?attr/colorOnSecondary" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

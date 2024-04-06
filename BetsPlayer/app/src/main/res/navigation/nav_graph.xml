@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/betListFragment">
+
+    <fragment
+        android:id="@+id/betListFragment"
+        android:name="com.betnmoney.betsplayer.ui.betProcess.BetListFragment"
+        android:label="Bet list"
+        tools:layout="@layout/fragment_bet_list" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.betnmoney.betsplayer.ui.info.InfoFragment"
+        android:label="About app"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.betnmoney.betsplayer.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/rateUsFragment"
+        android:name="com.betnmoney.betsplayer.ui.rateUs.RateUsFragment"
+        android:label="Rate app"
+        tools:layout="@layout/fragment_rate_us" />
+    <fragment
+        android:id="@+id/betHistoryFragment"
+        android:name="com.betnmoney.betsplayer.ui.betHistory.BetHistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_bet_history" />
+</navigation>

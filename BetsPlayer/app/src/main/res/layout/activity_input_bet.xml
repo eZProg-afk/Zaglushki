@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.betProcess.InputBetActivity">
+
+    <TextView
+        android:id="@+id/labelTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="How big is your bet?"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Please select the number of coins you want to bet on the team you selected earlier."
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintEnd_toEndOf="@id/labelTextView"
+        app:layout_constraintStart_toStartOf="@id/labelTextView"
+        app:layout_constraintTop_toBottomOf="@id/labelTextView" />
+
+    <NumberPicker
+        android:id="@+id/betNumberPicker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/shape_rounded_24"
+        android:backgroundTint="?attr/colorSecondary"
+        app:layout_constraintEnd_toEndOf="@id/descriptionTextView"
+        app:layout_constraintStart_toStartOf="@id/descriptionTextView"
+        app:layout_constraintTop_toBottomOf="@id/descriptionTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:drawableEnd="@drawable/ic_confirm"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Confirm selection"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintBottom_toTopOf="@id/goBackButton"
+        app:layout_constraintEnd_toEndOf="@id/goBackButton"
+        app:layout_constraintStart_toStartOf="@id/goBackButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/goBackButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        android:drawableEnd="@drawable/ic_back"
+        android:drawableTint="?attr/colorOnPrimary"
+        android:fontFamily="@font/poppins_bold"
+        android:text="One step back"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

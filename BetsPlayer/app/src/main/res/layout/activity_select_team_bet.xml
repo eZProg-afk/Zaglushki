@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.betProcess.SelectTeamBetActivity">
+
+    <TextView
+        android:id="@+id/labelTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Team selection:"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/onboardingViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/shape_rounded_24"
+        android:backgroundTint="?attr/colorSecondary"
+        app:layout_constraintBottom_toTopOf="@id/selectTeamButton"
+        app:layout_constraintTop_toBottomOf="@id/pageBackButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_only"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pageBackButton"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Previous"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintTop_toBottomOf="@id/labelTextView"
+        app:layout_constraintEnd_toStartOf="@id/vertical_only"
+        app:layout_constraintStart_toStartOf="@id/onboardingViewPager" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pageNextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Next"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintTop_toBottomOf="@id/labelTextView"
+        app:layout_constraintEnd_toEndOf="@id/onboardingViewPager"
+        app:layout_constraintStart_toEndOf="@id/vertical_only" />
+
+    <LinearLayout
+        android:id="@+id/containerIndicatorsLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/selectTeamButton"
+        app:layout_constraintEnd_toEndOf="@id/selectTeamButton"
+        app:layout_constraintStart_toStartOf="@id/selectTeamButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/selectTeamButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Confirm selection"
+        android:drawableEnd="@drawable/ic_confirm"
+        android:drawableTint="@color/white"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintBottom_toTopOf="@id/goBackButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/goBackButton"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        android:drawableEnd="@drawable/ic_back"
+        android:drawableTint="?attr/colorPrimary"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Cancel bet"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
