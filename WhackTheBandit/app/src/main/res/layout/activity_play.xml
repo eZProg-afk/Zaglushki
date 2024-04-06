@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.play.PlayActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/game_background_1"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentScoreTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/shape_rounded_9"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/rubik_bold"
+        android:padding="16dp"
+        android:text="@string/current_score_format"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/penaltyScoreTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_rounded_9"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/rubik_bold"
+        android:padding="16dp"
+        android:text="@string/penalty_score_format"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/currentScoreTextView"
+        app:layout_constraintStart_toStartOf="@id/currentScoreTextView"
+        app:layout_constraintTop_toBottomOf="@id/currentScoreTextView" />
+
+    <TextView
+        android:id="@+id/goBackTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/shape_rounded_9"
+        android:backgroundTint="@android:color/white"
+        android:drawableEnd="@drawable/ic_back"
+        android:drawablePadding="16dp"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="22sp"
+        android:text="Go to menu"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gameFieldGridView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="16dp"
+        android:columnCount="3"
+        android:numColumns="3"
+        android:padding="16dp"
+        android:rowCount="3"
+        android:verticalSpacing="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/penaltyScoreTextView">
+
+        <ImageView
+            android:id="@+id/firstImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:src="@drawable/bandit" />
+
+        <ImageView
+            android:id="@+id/secondImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:src="@drawable/bandit" />
+
+        <ImageView
+            android:id="@+id/thirdImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:src="@drawable/bandit" />
+
+        <ImageView
+            android:id="@+id/fourthImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:src="@drawable/bandit" />
+
+        <ImageView
+            android:id="@+id/fifthImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:src="@drawable/bandit" />
+
+        <ImageView
+            android:id="@+id/sixthImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:src="@drawable/bandit" />
+
+        <ImageView
+            android:id="@+id/seventhImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:src="@drawable/bandit" />
+
+        <ImageView
+            android:id="@+id/eightImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:src="@drawable/bandit" />
+
+        <ImageView
+            android:id="@+id/nineImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:src="@drawable/bandit" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

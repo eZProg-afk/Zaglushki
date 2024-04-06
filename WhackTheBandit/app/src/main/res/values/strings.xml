@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WhackTheBandit</string>
+    <string name="current_score_format">Current score: %d</string>
+    <string name="score_format">By playing the game this time you get %d points before ending the game. Great job, but you can do better! To replay the game, click the button below...</string>
+    <string name="best_score_format">For all your playing time, your record points were %d</string>
+    <string name="penalty_score_format">Penalty points: %d</string>
+</resources>

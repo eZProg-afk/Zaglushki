@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/game_background_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Whack The Bandit game"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="This game is a popular kill the mole game but with some special features. Firstly, in this game, instead of moles, sheriffs and bandits. They appear every 2 seconds on the playing field, and your task is to have time to hit them. However... If you kill the Sheriff, you will receive 1 penalty point. When you score 3 penalty points, the game will end. Your task is to kill all the bandits and not touch the sheriffs. For each bandit killed, you will be awarded 1 point."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/labelTextView"
+        app:layout_constraintStart_toStartOf="@id/labelTextView"
+        app:layout_constraintTop_toBottomOf="@id/labelTextView" />
+
+    <TextView
+        android:id="@+id/playGameButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_rounded_9"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_play"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/rubik_bold"
+        android:padding="16dp"
+        android:text="Play game"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@id/exitGameButton"
+        app:layout_constraintEnd_toEndOf="@id/descriptionTextView"
+        app:layout_constraintStart_toStartOf="@id/descriptionTextView" />
+
+    <TextView
+        android:id="@+id/exitGameButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/shape_rounded_9"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_exit"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/rubik_bold"
+        android:padding="16dp"
+        android:text="Exit from game"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/descriptionTextView"
+        app:layout_constraintStart_toStartOf="@id/descriptionTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
