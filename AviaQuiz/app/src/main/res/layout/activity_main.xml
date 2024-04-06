@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <TextView
+        android:id="@+id/labelTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Avia Quiz"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="This application is a set of quizzes. You can start taking one of them by clicking on the button below, or read the rules first to find out what kind of application it is and how to take the quiz."
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintEnd_toEndOf="@id/labelTextView"
+        app:layout_constraintStart_toStartOf="@id/labelTextView"
+        app:layout_constraintTop_toBottomOf="@id/labelTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/easyButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:drawableEnd="@drawable/ic_test_1"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Avia exam #1"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintBottom_toTopOf="@id/mediumButton"
+        app:layout_constraintEnd_toEndOf="@id/labelTextView"
+        app:layout_constraintStart_toStartOf="@id/labelTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mediumButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:drawableEnd="@drawable/ic_test_2"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Avia quiz #2"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintBottom_toTopOf="@id/hardButton"
+        app:layout_constraintEnd_toEndOf="@id/labelTextView"
+        app:layout_constraintStart_toStartOf="@id/labelTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hardButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:drawableEnd="@drawable/ic_test_3"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Avia test #3"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintBottom_toTopOf="@id/rulesButton"
+        app:layout_constraintEnd_toEndOf="@id/labelTextView"
+        app:layout_constraintStart_toStartOf="@id/labelTextView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/rulesButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:drawableEnd="@drawable/ic_rule"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Rules in this app"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/labelTextView"
+        app:layout_constraintStart_toStartOf="@id/labelTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

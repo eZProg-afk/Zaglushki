@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.rules.RulesActivity">
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:fontFamily="@font/rubik_bold"
+        android:layout_margin="16dp"
+        android:text="Rules and info about app:" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/infoTextView"
+        app:layout_constraintBottom_toTopOf="@id/goBackButton"
+        app:layout_constraintStart_toStartOf="@id/infoTextView"
+        app:layout_constraintEnd_toEndOf="@id/infoTextView"
+        android:scrollbars="vertical"
+        android:orientation="vertical"
+        android:background="@drawable/shape_rounded_12"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="?attr/colorSecondary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_medium"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:textColor="@color/white"
+            android:text="Hello user! In this application you will pass quizzes. The quizzes in this app are divided into 3 quizzes by difficulty level: easy, medium, hard. You are now on the information screen. In each quiz you will be able to answer with one of 4 answers. If you do not know what to answer, choose any of these 4 answers.
+The application is aimed at developing involvement in the topic of aviation and increasing erudition, which can be very useful for both schoolchildren, preschoolers, and adults who decide to devote their time to studying such a topic as aviation."
+            android:padding="16dp" />
+
+    </ScrollView>
+
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/goBackButton"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="@id/infoTextView"
+       app:layout_constraintEnd_toEndOf="@id/infoTextView"
+       android:layout_marginBottom="32dp"
+       android:drawableEnd="@drawable/ic_back"
+       android:drawableTint="@color/white"
+       android:fontFamily="@font/rubik_bold"
+       android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+       android:text="Go back to menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

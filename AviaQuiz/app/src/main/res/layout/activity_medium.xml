@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.medium.MediumActivity">
+
+    <TextView
+        android:id="@+id/answerGuessCountFormatTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/shape_rounded_12"
+        android:backgroundTint="?attr/colorSecondary"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:drawableStartCompat="@drawable/ic_quiz"
+        app:drawableTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/answer_guess_count_format" />
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_rounded_12"
+        android:backgroundTint="?attr/colorSecondary"
+        android:fontFamily="@font/rubik_bold"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/answerGuessCountFormatTextView"
+        app:layout_constraintStart_toStartOf="@id/answerGuessCountFormatTextView"
+        app:layout_constraintTop_toBottomOf="@id/answerGuessCountFormatTextView"
+        tools:text="Question one: what is hockey laallalalalalala" />
+
+    <ImageView
+        android:id="@+id/pictureImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="16dp"
+        app:layout_constraintTop_toBottomOf="@id/questionTextView"
+        app:layout_constraintBottom_toTopOf="@id/answerFirstTextView"
+        app:layout_constraintStart_toStartOf="@id/answerFirstTextView"
+        app:layout_constraintEnd_toEndOf="@id/answerFirstTextView"
+        android:adjustViewBounds="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answerFirstTextView"
+        android:layout_width="0dp"
+        android:drawableEnd="@drawable/ic_done"
+        android:drawableTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/rubik_bold"
+        app:layout_constraintBottom_toTopOf="@id/answerSecondTextView"
+        app:layout_constraintEnd_toEndOf="@id/questionTextView"
+        app:layout_constraintStart_toStartOf="@id/questionTextView"
+        tools:text="First answer" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answerSecondTextView"
+        android:layout_width="0dp"
+        android:drawableEnd="@drawable/ic_done"
+        android:drawableTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/rubik_bold"
+        app:layout_constraintBottom_toTopOf="@id/answerThirdTextView"
+        app:layout_constraintEnd_toEndOf="@id/questionTextView"
+        app:layout_constraintStart_toStartOf="@id/questionTextView"
+        tools:text="Second answer" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answerThirdTextView"
+        android:layout_width="0dp"
+        android:drawableEnd="@drawable/ic_done"
+        android:drawableTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/rubik_bold"
+        app:layout_constraintBottom_toTopOf="@id/answerFourthTextView"
+        app:layout_constraintEnd_toEndOf="@id/questionTextView"
+        app:layout_constraintStart_toStartOf="@id/questionTextView"
+        tools:text="Third answer" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answerFourthTextView"
+        android:layout_width="0dp"
+        android:drawableEnd="@drawable/ic_done"
+        android:drawableTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/rubik_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/questionTextView"
+        app:layout_constraintStart_toStartOf="@id/questionTextView"
+        tools:text="Fourth answer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
